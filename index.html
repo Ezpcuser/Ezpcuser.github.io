@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio web sobre trading, programación y salsa.">
+    <meta name="keywords" content="Portafolio, Trading, Programación, Salsa, Bootstrap, HTML, CSS, JavaScript">
+    <title>Portafolio de Mario</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/Ezpcuser/MarioMT.github.io/refs/heads/main/Images/PageLogo.ico" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+
+    <style>
+
+
+      </style>
+</head>
+<body>
+
+  <div id="privacyPopup" class="popup">
+    <div class="popup-content">
+        <h2>Política de Privacidad</h2>
+        <p>Este sitio web utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href="privacy.html">Política de Privacidad</a>.</p>
+        <button onclick="acceptPrivacy()">Aceptar</button>
+    </div>
+</div>
+
+<!-- Barra de Navegación Fija -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+          <img src="https://raw.githubusercontent.com/Ezpcuser/MarioMT.github.io/refs/heads/main/Images/PageLogo.ico" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          Portafolio de Mario
+      </a>
+      
+      <!-- Botón de Despliegue en dispositivos móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces del Menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="links.html">Enlaces de Interés</a></li>
+              <li class="nav-item"><a class="nav-link" href="trading.html">Trading</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+      <!--Boton Oscuro-->
+              <li class="nav-item">
+                <button class="btn btn-outline-light" onclick="toggleDarkMode()">🌙 Modo Oscuro</button>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<!-- Contenedor principal ajustable -->
+<div id="mainContent" style="margin-top: 60px;">
+    <!-- Contenido principal de la página -->
+</div>
+
+
+
+
+
+<!-- Sección Principal -->
+<header class="bg-primary text-white text-center py-5">
+    <h1 id="fade-in" class="display-3">Bienvenidos a Mi Portafolio</h1>
+    <p class="lead">En este sitio web aprenderas algo mas sobre lo que es el trading y sus propiedades.</p>
+  </header>
+
+<!-- Carrusel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/Persona1.jpg" class="d-block w-100" alt="Trading">
+        </div>
+        <div class="carousel-item">
+            <img src="images/Persona2.avif" class="d-block w-100" alt="Trade2">
+        </div>
+        <div class="carousel-item">
+            <img src="images/Persona 3.avif" class="d-block w-100" alt="Trade3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Trade1.jpg" class="d-block w-100" alt="Trading4">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+<!--Introduccion-->
+<section id="about-section" class="container mt-5 rounded">
+  <h2 class="shadow-none p-3 mb-5 bg-light rounded">¿Que es el Trading?</h2>
+  <p>El trading es la práctica de comprar y vender activos financieros en mercados como la bolsa de valores, el mercado de divisas (Forex) o el mercado de criptomonedas. El objetivo principal es obtener ganancias a partir de las fluctuaciones en los precios de estos activos.</p>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="Images/Trade2.jpg" class="img-fluid" style="width: 100%; height: auto;" alt="Imagen random trading">    </div>
+    <div class="col-md-6 shadow-lg p-3 mb-5 bg-body rounded">
+      <p style="text-align: justify;">“En términos simples, el 'trading' es un intercambio de productos por dinero”, resume Carlo Sala, profesor del Departamento de Economía, Finanzas y Contabilidad de Esade. El valor de los productos, indica, viene determinado principalmente por la demanda y la oferta. A través de un participante en los mercados (por ejemplo, un 'broker'), los comerciantes pueden conectarse con una bolsa y empezar a operar con activos financieros (los productos que se negocian en las bolsas —acciones, bonos, derivados, …— y que están más o menos estandarizados).</p>
+      <p style="text-align: justify;">El mercado de valores recibió los nombres de “oso y toro” debido a los caballeros españoles de California . Los caballeros pusieron a los osos californianos en batalla con los toros. Observaron que los osos eran golpeados hacia abajo y los toros hacia arriba, lo que le dio origen a la analogía.</p>
+      <p>
+        </p>
+</section>
+
+<section id="about-section" class="container mt-5 rounded">
+  <h2 class="shadow-none p-3 mb-5 bg-light rounded">Historia del Trading</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="Images/Trade3.jpg" class="img-fluid" style="width: 100%; height: auto;" alt="Imagen random trading">    </div>
+    <div class="col-md-6 shadow-lg p-3 mb-5 bg-body rounded">
+      <p style="text-align: justify;">Para hablar del origen del trading; tenemos que retroceder a varios periodos de la historia; probablemente muchos de nosotros pensamos en algún momento que el trading y las bolsas de valores tuvieron su apogeo o su auge a principios del siglo XX. Sin embargo, realmente los inicios del trading se dieron a mediados y a finales del siglo XVI en Japón; por parte de los primeros especuladores y los pioneros del psicotrading de la mano de Munehisa Homma.</p>
+      <p>
+
+        </p>
+</section>
+<!--Enlaces Trading-->
+<section class="container my-5">
+    <div class="row g-4"> 
+      <div class="col-12 col-md-4">
+        <a href="trading.html" class="image-link">
+          <img src="Images/HapiIMG.png" alt="Hapi Latam">
+          <div class="text-overlay">Empieza tu vida profesional como trader con Hapi</div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="https://es.tradingview.com/" class="image-link">
+          <img src="Images/Tradingview.png" alt="Enlace TradingView">
+          <div class="text-overlay">Analizar acciones</div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="https://finance.yahoo.com/" class="image-link">
+          <img src="Images/ImageNews.webp" alt="Noticias de Trading">
+          <div class="text-overlay">Ver Noticias de Trading</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Sección de Contacto -->
+<section id="contact" class="container my-5">
+    <h2>Contacto</h2>
+    <p>¿Quieres saber más sobre mis intereses o proyectos? ¡Contáctame!</p>
+    <section id="contact-section" class="container mt-5">
+      <h2 class="shadow-none p-3 mb-5 bg-light rounded">Contacta con nosotros</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <a href="https://www.facebook.com" target="_blank" class="btn btn-primary">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="https://www.twitter.com" target="_blank" class="btn btn-info">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-danger">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="d-flex justify-content-center p-3">
+      <a href="mailto:marioemt2003@gmail.com" class="btn btn-primary">Enviar Correo</a>
+  </div>
+</section>
+
+<!-- Políticas de Privacidad -->
+<section id="privacy" class="container my-5">
+    <h2>Políticas de Privacidad</h2>
+    <p>La privacidad de nuestros usuarios es importante.</p>
+</section>
+
+<!-- Enlaces a Redes Sociales -->
+<footer class="bg-dark text-center text-white py-3">
+    <p>Sígueme en mis redes sociales</p>
+    <a href="https://es-la.facebook.com/public/Mario-Malag%C3%B3n" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+    <a href="https://x.com/?lang=en" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fabout.instagram.com%2Ffeatures%2Fsearch-and-explore" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+    <a href="https://github.com/Ezpcuser/MarioMT.github.io" class="text-white mx-2"><i class="bi bi-github"></i></a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

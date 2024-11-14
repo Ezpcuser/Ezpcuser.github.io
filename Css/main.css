@@ -1,0 +1,210 @@
+/* Estilos base */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Añadir transición */
+  }
+  
+  .navbar,
+  .card,
+  .btn-outline-light {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #333333;
+  }
+  
+  body.dark-mode .card {
+    background-color: #444444;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  #about-section {
+    background-color: white;
+    color: black;
+  }
+  
+  h2 {
+    font-family: PT Serif;
+  }
+
+  #about-section h2 {
+    background-color: #f8f9fa; /* Fondo claro */
+  }
+  
+  /* Modo oscuro */
+  .dark-mode #about-section {
+    background-color: #333; /* Fondo oscuro para la sección */
+    color: white; /* Texto en blanco */
+  }
+  
+  .dark-mode #about-section h2 {
+    background-color: #444; /* Fondo oscuro para el encabezado */
+    color: white;
+  }
+  
+  .dark-mode .bg-light {
+    background-color: #2c2626 !important; /* Fondo oscuro */
+    color: white !important; /* Texto en blanco */
+  }
+
+  .dark-mode .bg-body {
+    background-color: #555 !important; /* Fondo oscuro para el bloque de contenido */
+  }
+
+  /*---Fin del css Modo Oscuro---*/
+
+header {
+    background: linear-gradient(to top, #bbbbdd, #da0e0e);
+    color: #fff;
+}
+
+
+/*Popup Privacidad*/
+.popup {
+    display: none; /* Se oculta por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode .popup {
+    background-color: #383232; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+    border: 1px solid #555; /* Borde oscuro */
+  }
+
+/*Fin */
+
+.image-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 250px; /* Tamaño fijo para las imágenes */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+
+  .carousel img {
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+  .image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio disponible sin distorsionarse */
+    transition: transform 0.3s ease;
+  }
+  .image-link:hover img {
+    transform: scale(1.1); /* Efecto de zoom en la imagen cuando se pasa el mouse */
+  }
+  .image-link .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+  }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0; 
+        }
+        to {
+          opacity: 1; 
+        }
+      }
+  
+      /* Aplicar la animación a los elementos dentro del header */
+      #fade-in {
+        animation: fadeIn 2s ease-out; /* 2 segundos de duración, con un efecto de salida */
+      }@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Sube ligeramente el texto */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+
+/* Aplicación de la animación al cargar la página */
+.fade-in {
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s ease-out forwards; /* Cambia la duración según desees */
+    animation-delay: 0.5s; /* Retardo opcional antes de que comience la animación */
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+
+footer {
+    background: #333;
+}   
+
+
+/* Estilos para el menú */
+/* Para el logo y el botón en dispositivos pequeños */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+
