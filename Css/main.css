@@ -197,8 +197,8 @@ header {
 }
 
 @keyframe typing {
-    from, to {border-color : transparent}
-    50% 
+    from, { width: 0;}
+    to, { width: 100%; }
 }
 
 a:hover {
