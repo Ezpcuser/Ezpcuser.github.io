@@ -191,7 +191,7 @@ header {
     animation-delay: 0.5s; /* Retardo opcional antes de que comience la animación */
 }
 
-.typewriter {
+.lead {
     overflow: hidden; /* Ensures that the text will not overflow */
     border-right: .15em solid orange; /* The cursor */
     white-space: nowrap; /* Keeps the text in a single line */
