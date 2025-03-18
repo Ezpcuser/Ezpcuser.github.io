@@ -191,6 +191,12 @@ header {
     animation-delay: 0.5s; /* Retardo opcional antes de que comience la animación */
 }
 
+.lead {
+    overflow: hidden
+    
+    animation: typing 4.0 steps (45, end), blink caret 1.5s step-end infinite; 
+}
+
 a:hover {
     color: #f39c12;
 }
