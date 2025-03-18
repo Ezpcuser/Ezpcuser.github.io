@@ -193,8 +193,12 @@ header {
 
 .lead {
     overflow: hidden
-    
     animation: typing 4.0 steps (45, end), blink caret 1.5s step-end infinite; 
+}
+
+@keyframe typing {
+    from, to {border-color : transparent}
+    50% 
 }
 
 a:hover {
